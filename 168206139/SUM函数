@@ -1,0 +1,12 @@
+def sum (alist):
+   L=0
+   if len(alist)==0:
+      return L
+   else:
+      L+=alist[0]
+      alist.remove(alist[0])
+      return L+sum(alist）
+
+ alist = [1,2，3,7]
+ s=sum(alist)
+ print(s)
