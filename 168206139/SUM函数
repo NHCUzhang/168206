@@ -6,7 +6,6 @@ def sum (alist):
       L+=alist[0]
       alist.remove(alist[0])
       return L+sum(alist）
-
- alist = [1,2，3,7]
- s=sum(alist)
- print(s)
+alist = [1,22,33,77]
+s=sum(alist)
+print(s)
