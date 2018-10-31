@@ -1,11 +1,16 @@
-def qsort_(list)
-     if len(list) = 1
-         return list
-     else
-         mid = list[0]
-         L = [i for i in list[1len(list)] if i = mid]
-         H = [i for i in list[1len(list)] if i  mid]
-         return qsort_(L) + [mid] + qsort_(H)
-         
- list = [54,1,32,22,28,312,143]
- print (qsort_(list))
+def quicksort(array):
+ 	if len(array) < 2:
+ 		return array
+ 	else:
+ 		less = []
+ 		greater = []
+ 		pivot = array[0]
+ 		for i in array[1:]:
+ 			if i <= pivot:
+ 				less.append(i)
+ 			else:
+ 				greater.append(i)
+ 		return quicksort(less) + [pivot] + quicksort(greater)
+
+arr = [68,15,78,5,94,54,8,78,54,64,46]
+print(quicksort(arr))
