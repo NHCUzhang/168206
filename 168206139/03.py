@@ -6,6 +6,7 @@ def MergeSort(alist):
     right = MergeSort(alist[middle:])
     return merge(left, right)
 
+
 def merge(a,b):
     c = []
     d = e = 0
@@ -23,6 +24,7 @@ def merge(a,b):
         for i in a[d:]:
             c.append(i)
     return c
+
 
 list = [8,5,4,1,3,9,7]
 print(MergeSort(list))
